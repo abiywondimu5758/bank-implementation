@@ -57,7 +57,7 @@ func(store *Store) TransferTx(ctx context.Context, arg TransferTxParams)(Transfe
 
 	err := store.execTx(ctx, func(q *Queries) error {
 		var err error
-
+// defwetaef
 		result.Transfer, err = q.CreateTransfer(ctx, CreateTransferParams{
 			FromAccountID: arg.FromAccountID,
 			ToAccountID:   arg.ToAccountID,
